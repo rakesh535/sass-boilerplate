@@ -1,0 +1,49 @@
+//breakpoint media query
+$xs: 544px;
+$sm: 768px;
+$ws: 992px;
+$md: 1050px;
+$lg: 1200px;
+$wsl: 1400px;
+$tv: 1800px;
+$lgtv: 2400px;
+$xltv: 2800px;
+@mixin mq($media) {
+  @if $media == xs {
+    @media (min-width: $xs) {
+      @content;
+    }
+  } @else if $media == sm {
+    @media (min-width: $sm) {
+      @content;
+    }
+  } @else if $media == ws {
+    @media (min-width: $ws) {
+      @content;
+    }
+  } @else if $media == md {
+    @media (min-width: $md) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media (min-width: $lg) {
+      @content;
+    }
+  } @else if $media == wsl {
+    @media (min-width: $wsl) {
+      @content;
+    }
+  } @else if $media == tv {
+    @media (min-width: $tv) {
+      @content;
+    }
+  } @else if $media == lgtv {
+    @media (min-width: $lgtv) {
+      @content;
+    }
+  } @else if $media == xltv {
+    @media (min-width: $xltv) {
+      @content;
+    }
+  }
+}
